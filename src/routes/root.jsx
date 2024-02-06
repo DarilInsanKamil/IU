@@ -26,8 +26,8 @@ const Root = () => {
     <div>
       <ScrollRestoration />
       <header
-        className={`fixed w-full z-50 top-0 right-0 left-0 ${
-          scrolling ? "-top-14" : ""
+        className={`fixed w-full z-50 top-0 right-0 left-0 transition-all duration-150 ${
+          scrolling && 'bg-neutral-900 backdrop-blur-sm'
         }`}
       >
         <Navbar />

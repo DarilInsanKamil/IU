@@ -19,7 +19,7 @@ const Navbar = () => {
     >
       <h3
         className={`text-[32px] font-semibold tracking-tighter text-black z-50 transition-all duration-200 ${
-          !isOpen ? "text-neutral-300" : "text-black"
+          !isOpen ? "text-white" : "text-black"
         }`}
       >
         IU
@@ -34,7 +34,7 @@ const Navbar = () => {
             width="32px"
             height="32px"
             viewBox="0 0 24 24"
-            className={!isOpen ? "text-neutral-300" : "text-black"}
+            className={!isOpen ? "text-white" : "text-black"}
           >
             <path
               fill="none"

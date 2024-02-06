@@ -64,9 +64,9 @@ const DetailMerchandise = () => {
               </section>
             </div>
             <div className="lg:col-start-2 col-start-1 lg:col-span-10 col-span-6 mt-10">
-              <div className="flex">
+              <div className="flex ">
                 <button
-                  className={`w-full ${detail && "bg-black text-white"} p-3`}
+                  className={`w-full rounded-tl-md rounded-bl-md ${detail && "bg-black text-white"} ${!detail && 'hover:bg-neutral-100'} transition-all duration-200 p-3 `}
                   onClick={() => {
                     setDetail(true);
                     setHelp(false);
@@ -75,7 +75,7 @@ const DetailMerchandise = () => {
                   Product Detail
                 </button>
                 <button
-                  className={`w-full ${help && "bg-black text-white"} p-3`}
+                  className={`w-full rounded-tr-md rounded-br-md ${help && "bg-black text-white "} p-3 ${!help && 'hover:bg-neutral-100'} transition-all duration-200`}
                   onClick={() => {
                     setHelp(true);
                     setDetail(false);
@@ -84,7 +84,7 @@ const DetailMerchandise = () => {
                   Help
                 </button>
               </div>
-              <div className="py-10">
+              <div className="py-10 transition-all duration-300">
                 {detail && (
                   <img
                     src={data.img_detail}

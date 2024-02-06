@@ -9,9 +9,7 @@ const Merchandise = () => {
     <main>
       <section className="relative">
         <SwiperComponents />
-        <section className="sticky top-0 left-0 right-0 w-full bg-white mt-10 z-30">
-          <NavbarMerch />
-        </section>
+
         <section className="px-5">
           <ul className="lg:hidden flex gap-3 items-center my-10">
             <Link className="border border-neutral-200 px-3 py-1 rounded-md" to="/merchandise">All</Link>
