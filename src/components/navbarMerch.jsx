@@ -4,18 +4,39 @@ import { useState } from "react";
 
 const NavbarMerch = () => {
   const [count, setCount] = useState(0);
-  console.log(count);
   return (
     <nav className="sticky top-0 right-0 left-0 w-full z-50 bg-white flex items-center justify-between lg:px-10 px-5 py-3">
-      <ul className="flex gap-10 items-center">
+      <div className="flex gap-10 items-center">
         <Link to="/">
-        <h1 className="font-bold text-2xl tracking-tighter">IU</h1>
+          <h1 className="font-bold text-2xl tracking-tighter">IU</h1>
         </Link>
-        <Link to="/merchandise">All</Link>
-        <Link to="/merchandise/items">Merch</Link>
-        <Link to="/merchandise/music">Music</Link>
-        <Link to="/merchandise/photobook">PhotoBook</Link>
-      </ul>
+        <ul className="lg:flex hidden gap-10 items-center">
+          <Link
+            
+            to="/merchandise"
+          >
+            All
+          </Link>
+          <Link
+            
+            to="/merchandise/items"
+          >
+            Merch
+          </Link>
+          <Link
+            
+            to="/merchandise/music"
+          >
+            Music
+          </Link>
+          <Link
+            
+            to="/merchandise/photobook"
+          >
+            PhotoBook
+          </Link>
+        </ul>
+      </div>
 
       <div className="flex gap-5 items-center">
         <div className="leading-tight">

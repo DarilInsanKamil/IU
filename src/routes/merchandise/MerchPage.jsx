@@ -12,7 +12,7 @@ const MerchPage = () => {
           })}
         </section>
         <section className="col-start-1 lg:col-span-12 col-span-6 flex justify-center mt-10">
-            <Sosmed2/>
+          <Sosmed2 />
         </section>
       </section>
     </main>

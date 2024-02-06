@@ -47,6 +47,10 @@ const router = createBrowserRouter([
     element: <MerchLayout />,
     children: [
       {
+        path: "/merchandise/:category",
+        element: <MerchPage />,
+      },
+      {
         path: "/merchandise/items",
         element: <MerchPage />,
       },
