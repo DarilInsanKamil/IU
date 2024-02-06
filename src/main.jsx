@@ -8,6 +8,8 @@ import About from "./routes/about.jsx";
 import Discography from "./routes/discography/discography.jsx";
 import DetailDiscography from "./routes/discography/detailDiscography.jsx";
 import Merchandise from "./routes/merchandise/merchandise.jsx";
+import DetailMerchandise from "./routes/merchandise/DetailMerchandise.jsx";
+import MerchLayout from "./routes/merchandise/Layout.jsx";
 
 const router = createBrowserRouter([
   {
@@ -31,9 +33,19 @@ const router = createBrowserRouter([
         path: "/discography/:id",
         element: <DetailDiscography />,
       },
+    ],
+  },
+  {
+    path: "/merchandise",
+    element: <MerchLayout />,
+    children: [
       {
-        path: "/merchandise/",
+        path: "/merchandise",
         element: <Merchandise />,
+      },
+      {
+        path: "/merchandise/:id",
+        element: <DetailMerchandise />,
       },
     ],
   },

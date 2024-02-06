@@ -6,7 +6,7 @@ import { Autoplay, Pagination, Navigation } from "swiper/modules";
 
 const SwiperComponents = ({ parallaxOffset }) => {
   return (
-    <section>
+    <section className="h-[50vh]">
       <Swiper
         spaceBetween={30}
         centeredSlides={true}
