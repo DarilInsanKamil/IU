@@ -9,9 +9,11 @@ const Root = () => {
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollPos = window.scrollY;
-      const shouldHideNavbar = currentScrollPos > prevScrollPos;
-
-      setScrolling(shouldHideNavbar);
+      if (currentScrollPos > 0) {
+        setScrolling(true);
+      } else if(currentScrollPos == 0) {
+        setScrolling(false);
+      }
       setPrevScrollPos(currentScrollPos);
     };
 
