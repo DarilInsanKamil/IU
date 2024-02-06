@@ -6,7 +6,7 @@ import { Autoplay, Pagination, Navigation } from "swiper/modules";
 
 const SwiperComponents = ({ parallaxOffset }) => {
   return (
-    <section className="h-[50vh]">
+    <section className="lg:h-[80vh] h-[60vh] w-full object-contain">
       <Swiper
         spaceBetween={30}
         centeredSlides={true}
@@ -23,8 +23,8 @@ const SwiperComponents = ({ parallaxOffset }) => {
         modules={[Autoplay, Pagination, Navigation]}
         className="mySwiper"
       >
-        <SwiperSlide className="bg-center bg-fixed">
-          <img src="/main_visual2.jpg" alt="carousel" />
+        <SwiperSlide className="bg-center bg-fixed object-contain">
+          <img src="/main_visual2.jpg" alt="carousel" className="object-contain"/>
         </SwiperSlide>
         <SwiperSlide className="bg-center bg-fixed">
           <img src="/main_visual4.jpg" alt="carousel" />

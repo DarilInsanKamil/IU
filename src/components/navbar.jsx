@@ -1,8 +1,6 @@
-import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { useState } from "react";
 import Navigation from "./navigation";
 import Sosmed from "./sosmed";
-
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 

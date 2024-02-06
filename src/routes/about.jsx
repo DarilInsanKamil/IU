@@ -5,7 +5,7 @@ const About = () => {
   return (
     <main className="relative">
       <section className="bg-profile bg-center bg-fixed bg-cover min-h-[80vh] bg-no-repeat  bg-black "></section>
-      <section className="grid lg:grid-cols-12 grid-cols-6">
+      <section className="grid lg:grid-cols-12 grid-cols-6 lg:pb-20 pb-10">
         <div className="lg:col-start-1 col-start-1 col-span-6 lg:col-span-12 text-center sticky top-0 w-full left-0 right-0 z-10 bg-white/10 backdrop-blur-md py-3">
           <h2 className="font-bold tracking-tighter text-4xl">IU</h2>
           <p className="text-neutral-500">Lee Ji-eun</p>
@@ -28,7 +28,7 @@ const About = () => {
             <Sosmed2 />
           </section>
         </div>
-        <div className="lg:col-start-3 col-start-1 lg:col-span-8 col-span-6 mt-10">
+        <div className="lg:col-start-3 col-start-1 lg:col-span-8 col-span-6 mt-10 px-5">
           <MasonryImage />
         </div>
       </section>

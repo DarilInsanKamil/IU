@@ -44,6 +44,18 @@ const router = createBrowserRouter([
         element: <Merchandise />,
       },
       {
+        path: "/merchandise/items",
+        element: <Merchandise />,
+      },
+      {
+        path: "/merchandise/music",
+        element: <Merchandise />,
+      },
+      {
+        path: "/merchandise/photobook",
+        element: <Merchandise />,
+      },
+      {
         path: "/merchandise/:id",
         element: <DetailMerchandise />,
       },

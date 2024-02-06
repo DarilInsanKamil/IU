@@ -46,7 +46,7 @@ const Discography = () => {
       </section>
 
       <section className="grid lg:grid-cols-12 grid-cols-6 px-5 py-10 bg-white relative  h-auto">
-        <div className="lg:col-start-1 col-start-3 lg:col-span-12 tracking-tighter font-bold text-2xl text-center sticky top-0 w-full left-0 right-0 z-10 bg-white/10 backdrop-blur-md py-3">
+        <div className="lg:col-start-1 col-start-1 col-span-6 lg:col-span-12 tracking-tighter font-bold text-2xl text-center sticky top-0 w-full left-0 right-0 z-10 bg-white/10 backdrop-blur-md py-3">
           <h2>Discography</h2>
         </div>
         <div className="lg:col-start-2 lg:col-span-10 col-start-1 col-span-6 grid lg:grid-cols-4 md:grid-cols-3 grid-cols-1 gap-4 mt-10  ">

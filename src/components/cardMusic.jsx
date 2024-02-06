@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 const Card = ({ data }) => {
   return (
     <section key={data.id} className="w-full">
-      <Link to={`/discography/${data.id}`}>
+      <Link preventScrollReset={false} to={`/discography/${data.id}`}>
         <figure className="overflow-hidden h-fit rounded-md">
           <img
             src={data.img}

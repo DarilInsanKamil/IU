@@ -5,7 +5,7 @@ const DetailDiscography = () => {
   const { id } = useParams();
   const filterMusic = DiscographyMusic.filter((el) => el.id === Number(id));
   return (
-    <main className="bg-neutral-200 px-5 py-10">
+    <main className=" px-5 py-10">
       <section className="">
         {filterMusic.map((res) => (
           <section className="grid lg:grid-cols-12 grid-cols-6 ">

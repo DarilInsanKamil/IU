@@ -1,4 +1,4 @@
-import { Outlet, Route } from "react-router-dom";
+import { Outlet, ScrollRestoration } from "react-router-dom";
 import Navbar from "../components/navbar";
 import { useEffect, useState } from "react";
 
@@ -10,7 +10,7 @@ const Root = () => {
     const handleScroll = () => {
       const currentScrollPos = window.scrollY;
       const shouldHideNavbar = currentScrollPos > prevScrollPos;
-    
+
       setScrolling(shouldHideNavbar);
       setPrevScrollPos(currentScrollPos);
     };
@@ -24,6 +24,7 @@ const Root = () => {
 
   return (
     <div>
+      <ScrollRestoration />
       <header
         className={`fixed w-full z-50 top-0 right-0 left-0 ${
           scrolling ? "-top-14" : ""
