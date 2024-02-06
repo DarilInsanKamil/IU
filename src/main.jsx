@@ -59,7 +59,7 @@ const router = createBrowserRouter([
         element: <PhotobookPage />,
       },
       {
-        path: "/merchandise/:id",
+        path: "/merchandise/:category/:id",
         element: <DetailMerchandise />,
       },
     ],

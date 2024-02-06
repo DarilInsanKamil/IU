@@ -14,13 +14,13 @@ const Merchandise = () => {
         <section className="grid lg:grid-cols-12 grid-cols-6 py-10 px-5">
           <section className="h-screen bg-white grid lg:grid-cols-4 grid-cols-1 lg:col-start-2 col-start-1 lg:col-span-10 col-span-6 gap-4">
             {MerchData.map((res) => {
-              return <CardMerch data={res} />;
+              return <CardMerch key={res.id} data={res} />;
             })}
             {MusicData.map((res) => {
-              return <CardMerch data={res} />;
+              return <CardMerch key={res.id} data={res} />;
             })}
             {PhotoBookData.map((res) => {
-              return <CardMerch data={res} />;
+              return <CardMerch key={res.id} data={res} />;
             })}
           </section>
         </section>

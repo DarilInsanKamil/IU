@@ -230,6 +230,7 @@ export const DiscographyMusic = [
 export const MerchData = [
     {
         id: 1,
+        category: "merch",
         title: "(Restock) [I-KE] IU OFFICIAL LIGHT STICK VER.3 I-KE",
         price: 3148,
         weight: 300,
@@ -239,6 +240,7 @@ export const MerchData = [
     },
     {
         id: 2,
+        category: "merch",
         img: "https://madeedtr4721.cdn-nhncommerce.com/data/goods/22/09/37/1000001853/1000001853_detail_066.jpg",
         title: "[2022 The Golden Hour] HOODIE",
         price: 5172,
@@ -248,6 +250,7 @@ export const MerchData = [
     },
     {
         id: 3,
+        category: "merch",
         img: "https://madeedtr4721.cdn-nhncommerce.com/data/goods/23/10/42/1000001967/1000001967_detail_082.jpg",
         title: "[MOMENT,] LYRICS BOOK",
         price: 1499,
@@ -257,6 +260,7 @@ export const MerchData = [
     },
     {
         id: 4,
+        category: "merch",
         img: "https://madeedtr4721.cdn-nhncommerce.com/data/goods/20/03/13/1000000013/1000000013_detail_096.jpg",
         title: "[April, 2020] POSTCARDS",
         price: 524,
@@ -266,6 +270,7 @@ export const MerchData = [
     },
     {
         id: 5,
+        category: "merch",
         img: "https://madeedtr4721.cdn-nhncommerce.com/data/goods/22/11/47/1000001876/1000001876_detail_061.jpg",
         title: "[5소리] BALL CAP",
         price: 1874,
@@ -321,6 +326,7 @@ export const MusicData = [
 export const PhotoBookData = [
     {
         id: 1,
+        category: "photo",
         title: `IU 2024 SEASON'S GREETINGS`,
         img: "https://madeedtr4721.cdn-nhncommerce.com/data/goods/23/11/45/1000001986/1000001986_detail_098.jpg",
         price: 3148,
@@ -330,6 +336,7 @@ export const PhotoBookData = [
     },
     {
         id: 2,
+        category: "photo",
         title: `2023 IU Season’s Greetings`,
         img: "https://madeedtr4721.cdn-nhncommerce.com/data/goods/22/11/45/1000001864/1000001864_detail_090.jpg",
         price: 2998,
