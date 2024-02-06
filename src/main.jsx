@@ -10,6 +10,9 @@ import DetailDiscography from "./routes/discography/detailDiscography.jsx";
 import Merchandise from "./routes/merchandise/merchandise.jsx";
 import DetailMerchandise from "./routes/merchandise/DetailMerchandise.jsx";
 import MerchLayout from "./routes/merchandise/Layout.jsx";
+import MerchPage from "./routes/merchandise/MerchPage.jsx";
+import MusicPage from "./routes/merchandise/MusicPage.jsx";
+import PhotobookPage from "./routes/merchandise/PhotobookPage.jsx";
 
 const router = createBrowserRouter([
   {
@@ -37,23 +40,23 @@ const router = createBrowserRouter([
   },
   {
     path: "/merchandise",
+    element: <Merchandise />,
+  },
+  {
+    path: "/merchandise",
     element: <MerchLayout />,
     children: [
       {
-        path: "/merchandise",
-        element: <Merchandise />,
-      },
-      {
         path: "/merchandise/items",
-        element: <Merchandise />,
+        element: <MerchPage />,
       },
       {
         path: "/merchandise/music",
-        element: <Merchandise />,
+        element: <MusicPage />,
       },
       {
         path: "/merchandise/photobook",
-        element: <Merchandise />,
+        element: <PhotobookPage />,
       },
       {
         path: "/merchandise/:id",

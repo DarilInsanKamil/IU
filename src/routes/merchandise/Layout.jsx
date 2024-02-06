@@ -5,7 +5,7 @@ const MerchLayout = () => {
   return (
     <div>
       <NavbarMerch />
-      <div id="detail">
+      <div id="detail" className="min-h-screen">
         <Outlet />
       </div>
     </div>
