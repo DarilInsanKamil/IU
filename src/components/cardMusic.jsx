@@ -1,3 +1,4 @@
+import { LazyLoadImage } from "react-lazy-load-image-component";
 import { Link } from "react-router-dom";
 
 const Card = ({ data }) => {
@@ -5,10 +6,13 @@ const Card = ({ data }) => {
     <section key={data.id} className="w-full">
       <Link preventScrollReset={false} to={`/discography/${data.id}`}>
         <figure className="overflow-hidden h-fit rounded-md">
-          <img
+          <LazyLoadImage
             src={data.img}
+            width={344}
+            height={280}
             alt={data.title}
-            className="w-[344px] h-[280px] object-cover  hover:scale-105 transition-all duration-200"
+            className="hover:scale-105 transition-all duration-300"
+
           />
         </figure>
         <div>

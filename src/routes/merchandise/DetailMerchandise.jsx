@@ -1,10 +1,11 @@
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import { MerchData, MusicData, PhotoBookData } from "../../utils/data";
 import { useEffect, useState } from "react";
 import { formatCurrencyUSD } from "../../utils/formatCurrency";
 import Sosmed2 from "../../components/sosmed2";
 import Help from "../../components/help";
 import { useCartStore, useStore } from "../../utils/store";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 const DetailMerchandise = () => {
   const { id, category } = useParams();
   const [data, setData] = useState([]);
@@ -19,19 +20,21 @@ const DetailMerchandise = () => {
     (res) => res.category == category.toString() && res.id === Number(id)
   );
   const { cart, increaseQuantity, addToCart, quantity } = useCartStore();
+  const nav = useNavigate();
   return (
     <main className="py-10 ">
-      <section>
+      <section className="">
         {filterData.map((data) => (
           <section
             key={data.id}
-            className="grid lg:grid-cols-12 grid-cols-6 gap-5 w-full px-5"
+            className="grid lg:grid-cols-12 grid-cols-6 gap-5 w-full  px-5 col-start-1 col-span-12"
           >
             <div className=" lg:col-start-2 col-start-1 lg:col-span-5 col-span-6">
-              <img
+              <LazyLoadImage
                 src={data.img}
-                alt={data.title}
-                className="object-cover w-full h-max rounded-md"
+                width={600}
+                height={400}
+                alt="Image Alt"
               />
             </div>
             <div className="lg:col-start-7 col-start-1 lg:col-span-4 col-span-6 w-full">
@@ -104,10 +107,11 @@ const DetailMerchandise = () => {
               </div>
               <div className="py-10 transition-all duration-300">
                 {detail && (
-                  <img
+                  <LazyLoadImage
                     src={data.img_detail}
-                    alt={data.title}
-                    className="object-cover w-full mb-10"
+                    width='100%'
+                    height={400}
+                    alt="Image Alt"
                   />
                 )}
                 {help && <Help />}

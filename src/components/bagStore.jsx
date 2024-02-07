@@ -13,6 +13,7 @@ const BagStore = ({ store }) => {
       document.body.style.overflow = "auto";
     }
   };
+
   const {removeAllProduct} = useCartStore()
   return (
     <section className="relative ">
@@ -41,6 +42,9 @@ const BagStore = ({ store }) => {
       >
         <section className="p-5">
           <div className="flex justify-between items-center mb-5">
+          <button className="" onClick={removeAllProduct}>
+              Remove all
+            </button>
             <button onClick={toggleDropdown}>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -58,9 +62,7 @@ const BagStore = ({ store }) => {
                 <path d="m6 6 12 12" />
               </svg>
             </button>
-            <button className="" onClick={removeAllProduct}>
-              Remove all
-            </button>
+
           </div>
 
           <SidebarCart />

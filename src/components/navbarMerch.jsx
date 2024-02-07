@@ -10,18 +10,12 @@ const NavbarMerch = () => {
   const { cart } = useCartStore();
   // const [count, setCount] = useState(0);
   return (
-    <nav className="sticky top-0 right-0 left-0 w-full z-50 bg-white flex items-center justify-between lg:px-10 px-5 py-3">
-      <div className="flex lg:gap-10 gap-5 items-center">
+    <nav className="sticky top-0 right-0 left-0 w-full z-50 bg-white flex items-center justify-between gap-2  lg:px-10 px-5 py-3">
+      <div className="flex items-center lg:gap-10 gap-3">
         <Navbar />
-        <Link to="/merchandise">
-          <h1 className="font-bold lg:text-2xl text-xl tracking-tighter">IU</h1>
+        <Link to="/merchandise" className="font-bold tracking-tighter text-xl">
+          IU
         </Link>
-        <ul className="lg:flex hidden gap-10 items-center">
-          <Link to="/merchandise">All</Link>
-          <Link to="/merchandise/items">Merch</Link>
-          <Link to="/merchandise/music">Music</Link>
-          <Link to="/merchandise/photobook">PhotoBook</Link>
-        </ul>
       </div>
 
       <div className="flex gap-5 items-center">
@@ -29,10 +23,10 @@ const NavbarMerch = () => {
           <input
             type="text"
             placeholder="search"
-            className="border border-neutral-300 rounded-full px-3 h-9 lg:w-[200px] lg:focus:w-[240px] transition-all duration-300 outline-blue-400"
+            className="border border-neutral-300 w-fit rounded-full px-3 h-9 lg:focus:w-[240px] transition-all duration-300 outline-blue-400"
           />
         </div>
-          <BagStore store={cart.length} />
+        <BagStore store={cart.length} />
       </div>
     </nav>
   );
@@ -53,9 +47,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav
-      className={`py-2 flex justify-end w-full transition-all duration-200 z-40`}
-    >
+    <nav className={`flex  transition-all duration-200 z-40`}>
       <button
         className="z-50 transition-all duration-200"
         onClick={toggleDropdown}
