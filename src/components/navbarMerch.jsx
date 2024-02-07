@@ -54,7 +54,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`py-2 flex justify-end w-full transition-all duration-200 z-30`}
+      className={`py-2 flex justify-end w-full transition-all duration-200 z-40`}
     >
       <button
         className="z-50 transition-all duration-200"

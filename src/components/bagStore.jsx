@@ -21,7 +21,7 @@ const BagStore = ({ store }) => {
           xmlns="http://www.w3.org/2000/svg"
           width="28px"
           height="28px"
-          className="text-black z-10"
+          className="text-black"
           viewBox="0 0 24 24"
         >
           <g fill="none" stroke="currentColor" strokeWidth="1.5">
@@ -36,8 +36,8 @@ const BagStore = ({ store }) => {
       </div>
       <div
         className={`lg:w-[25vw] w-[90vw] bg-white shadow-md fixed top-0 right-0 ${
-          openCart && "translate-x-0"
-        } translate-x-full h-screen transition-all duration-500`}
+          openCart ? "translate-x-0" : "translate-x-full" 
+        }  h-screen transition-all duration-500`}
       >
         <section className="p-5">
           <div className="flex justify-between items-center mb-5">
@@ -52,7 +52,7 @@ const BagStore = ({ store }) => {
                 strokeWidth="2"
                 strokeLinecap="round"
                 strokeLinejoin="round"
-                className="z-10"
+                className=""
               >
                 <path d="M18 6 6 18" />
                 <path d="m6 6 12 12" />
