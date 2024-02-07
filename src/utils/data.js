@@ -283,7 +283,7 @@ export const MerchData = [
 
 export const MusicData = [
     {
-        id: 1,
+        id: 6,
         category: "album",
         title: "[DVD] 2022 IU Concert [The Golden Hour : Under The Orange Sun] DVD",
         img: "/images/merch/music1.jpg",
@@ -303,7 +303,7 @@ export const MusicData = [
         }
     },
     {
-        id: 2,
+        id: 7,
         category: "album",
         title: "[LP] IU - REMAKE ALBUM 꽃갈피 LP",
         img: "/images/merch/music2.jpg",
@@ -326,7 +326,7 @@ export const MusicData = [
 
 export const PhotoBookData = [
     {
-        id: 1,
+        id: 8,
         category: "photo",
         title: `IU 2024 SEASON'S GREETINGS`,
         price: 3148,
@@ -336,7 +336,7 @@ export const PhotoBookData = [
         img: "/images/merch/photo1.jpg",
     },
     {
-        id: 2,
+        id: 9,
         category: "photo",
         title: `2023 IU Season’s Greetings`,
         price: 2998,

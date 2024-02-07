@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
-
+import Sosmed2 from "./sosmed2";
 const Navigation = ({ onClick }) => {
   return (
-    <section className="w-full grid lg:grid-cols-12 grid-cols-6 font-semibold">
-      <ul className="flex flex-col text-[52px] gap-3 font-semibold lg:col-start-6 lg:col-span-3 col-start-1 col-span-6 px-10 ">
+    <section className="w-full grid lg:grid-cols-12 grid-cols-6 font-semibold relative">
+      <ul className="flex flex-col lg:text-[52px] text-[32px] gap-3 font-semibold lg:col-start-6 lg:col-span-3 col-start-1 col-span-6 px-10 ">
         <Link
           onClick={onClick}
           to="/"
@@ -31,13 +31,6 @@ const Navigation = ({ onClick }) => {
           className="tracking-tight hover:tracking-wide transition-all"
         >
           Merch
-        </Link>
-        <Link
-          onClick={onClick}
-          to="/event"
-          className="tracking-tight hover:tracking-wide transition-all"
-        >
-          Event
         </Link>
       </ul>
     </section>

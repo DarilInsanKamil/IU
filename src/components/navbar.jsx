@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Navigation from "./navigation";
 import Sosmed from "./sosmed";
+import Sosmed2 from "./sosmed2";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -70,7 +71,7 @@ const Navbar = () => {
       >
         <Navigation onClick={toggleDropdown} />
         <footer
-          className={`absolute bottom-3 left-0 right-0 w-full text-white lg:flex hidden justify-between items-center px-10`}
+          className={`absolute bottom-3 left-0 right-0 w-full text-white flex justify-between items-center px-10`}
         >
           <Sosmed isOpen={isOpen} />
         </footer>
