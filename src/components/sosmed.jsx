@@ -10,7 +10,7 @@ const Sosmed = ({ isOpen }) => {
           height="24px"
           viewBox="0 0 24 24"
           className={`${
-            isOpen ? "text-black" : "text-neutral-500"
+            isOpen ? "text-black" : "text-white"
           }  hover:scale-105 transition-all duration-300`}
         >
           <path
@@ -28,7 +28,7 @@ const Sosmed = ({ isOpen }) => {
           height="24px"
           viewBox="0 0 24 24"
           className={`${
-            isOpen ? "text-black" : "text-neutral-500"
+            isOpen ? "text-black" : "text-white"
           }  hover:scale-105 transition-all duration-300`}
         >
           <path
@@ -44,7 +44,7 @@ const Sosmed = ({ isOpen }) => {
           height="24px"
           viewBox="0 0 24 24"
           className={`${
-            isOpen ? "text-black" : "text-neutral-500"
+            isOpen ? "text-black" : "text-white"
           }  hover:scale-105 transition-all duration-300`}
         >
           <path
@@ -64,7 +64,7 @@ const Sosmed = ({ isOpen }) => {
           height="24px"
           viewBox="0 0 1536 1792"
           className={`${
-            isOpen ? "text-black" : "text-neutral-500"
+            isOpen ? "text-black" : "text-white"
           }  hover:scale-105 transition-all duration-300`}
         >
           <path
@@ -80,7 +80,7 @@ const Sosmed = ({ isOpen }) => {
           height="24px"
           viewBox="0 0 256 256"
           className={`${
-            isOpen ? "text-black" : "text-neutral-500"
+            isOpen ? "text-black" : "text-white"
           }  hover:scale-105 transition-all duration-300`}
         >
           <path
